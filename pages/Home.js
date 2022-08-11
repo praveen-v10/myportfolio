@@ -30,10 +30,10 @@ function Home() {
             <Link href="/Home/#section3"><h1 className=' cursor-pointer'>Project</h1></Link>
             <Link href="/Home/#section4"><h1 className=' cursor-pointer pr-32'>Contact</h1></Link>
                 <div className='flex gap-3 pl-20'>
-                    <a href='https://github.com/praveen-v10' target="_blank">
+                    <a href='https://github.com/praveen-v10' target="_blank" rel="noreferrer">
                 <img src='/assets/image/github.svg' className='h-10 w-10'></img>
                 </a>
-                <a href='https://www.linkedin.com/in/praveen-v-6b3b56194/' target="_blank">
+                <a href='https://www.linkedin.com/in/praveen-v-6b3b56194/' target="_blank" rel="noreferrer">
                 <img src='/assets/icon/linkedin1.svg' className='h-10 w-10'></img>
                 </a>
                 </div>
@@ -56,7 +56,7 @@ function Home() {
             </div>
              <div className='h-[400px] w-[500px] pt-32 pl-10 text-center'>
                 <h1 className='text-4xl font-Piano' >Hello !!</h1>
-                <h2 className='text-3xl pt-5 font-Damion font-bold'>I'm  Praveen V</h2>
+                <h2 className='text-3xl pt-5 font-Damion font-bold'>I&apos;m  Praveen V</h2>
                 <h3 className='text-2xl pt-2 font-Piano '>Software developer</h3>
                 <div className='pt-16'>
                 <Link href="/Home/#section4">
@@ -79,7 +79,7 @@ function Home() {
         <div className='h-screen flex items-center gap-2'>
             <div className=' space-y-3 text-2xl'>
             <h1>
-            I'm a software developer with 6 months of internship experience in 
+            I&apos;m a software developer with 6 months of internship experience in 
             developing and building real-time applications for E-commerce, Entertainment platforms.  </h1>
             <h2>
             I get excited about opportunities where I get to challenge and solve problems using digital platforms.
@@ -113,14 +113,14 @@ function Home() {
                          <div className='flex pl-16'>
                             <div>
                             <h2 className='pb-5 pl-4 text-2xl'>App</h2>
-                            <a href='https://disney-six.vercel.app/' target="_blank" >
+                            <a href='https://disney-six.vercel.app/' target="_blank" rel="noreferrer" >
                            <img src='https://filmdaily.co/wp-content/uploads/2021/01/disneyplusfree-02.jpg'className='h-20 w-20 rounded-lg'></img>
                           </a>
                             </div>    
                            <div className='pl-10 '>
                            <h2 className='pb-5 pr-5 text-2xl'>Source code</h2>
                            <div className='pl-5'>
-                           <a href='https://github.com/praveen-v10/disney' target="_blank" >
+                           <a href='https://github.com/praveen-v10/disney' target="_blank" rel="noreferrer" >
                            <img src='/assets/image/github.svg'className='h-20 w-20 rounded-lg'></img>
                              </a>
                            </div>                       
@@ -138,14 +138,14 @@ function Home() {
                          <div className='flex pl-16'>
                             <div>
                             <h2 className='pb-5 pl-4 text-2xl'>App</h2>
-                            <a href='https://twiter.vercel.app/' target="_blank" >
+                            <a href='https://twiter.vercel.app/' target="_blank" rel="noreferrer" >
                            <img src='/assets/image/twitter.svg'className='h-20 w-20 rounded-lg'></img>
                           </a>
                             </div>    
                            <div className='pl-10 '>
                            <h2 className='pb-5 pr-5 text-2xl'>Source code</h2>
                            <div className='pl-5'>
-                           <a href='https://github.com/praveen-v10/twiter' target="_blank" >
+                           <a href='https://github.com/praveen-v10/twiter' target="_blank" rel="noreferrer" >
                            <img src='/assets/image/github.svg'className='h-20 w-20 rounded-lg'></img>
                              </a>
                            </div>                       
@@ -177,9 +177,12 @@ function Home() {
 
                     <div className='flex  items-center gap-5'>
                         <img src='/assets/icon/linkedin.svg' className='h-[80px] w-[80px]'></img>
-                        <a href='https://www.linkedin.com/in/praveen-v-6b3b56194/'target="_blank">
+                        <Link href='https://www.linkedin.com/in/praveen-v-6b3b56194/'>
+                        <a target="_blank" rel="noreferrer">
                         <h2 className='text-2xl font-Damion'>https://www.linkedin.com/in/praveen-v-6b3b56194/</h2>
                         </a>
+                        </Link>
+                       
                     </div>
 
                 </div>
