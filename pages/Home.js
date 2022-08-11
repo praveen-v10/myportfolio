@@ -22,7 +22,7 @@ function Home() {
         <div className='max-w-6xl mx-auto  flex justify-center gap-5 text-2xl'>
         
             
-        <img src='/assets/image/me.jpg' className='h-10 w-10 rounded-full'></img>
+        <img src='/assets/image/me3.png' className='h-10 w-10 rounded-full'></img>
             <h1 className='font-DS pr-40'>Praveen V</h1>
             
             <Link href="/Home/#section1"><h1 className=' cursor-pointer'>Home</h1></Link>
@@ -65,8 +65,10 @@ function Home() {
                 </div>
             </div> 
             </div>
-            <div className='justify-center flex animate-bounce '>
-            <img src='/assets/icon/iarrow.svg' className='h-10 w-10 rotate-90'></img> 
+            <div className='justify-center flex animate-bounce  '>
+                <Link href="/Home/#section2">
+            <img src='/assets/icon/iarrow.svg' className='h-10 w-10 rotate-90 cursor-pointer'></img> 
+            </Link>
             </div>
         </div>
        
@@ -77,14 +79,17 @@ function Home() {
     {/* Section 2 start */}
     <div id='section2'>
         <div className='h-screen flex items-center gap-2'>
-            <div className=' space-y-3 text-2xl'>
-            <h1>
-            I&apos;m a software developer with 6 months of internship experience in 
-            developing and building real-time applications for E-commerce, Entertainment platforms.  </h1>
-            <h2>
-            I get excited about opportunities where I get to challenge and solve problems using digital platforms.
+            <div className=''>
+            <h1 className='text-3xl pb-16'>About</h1>
+            <div className=' h-[200px] w-[600px] border-y-2 border-gray-400 shadow-lg'>
+            <p className='pt-8 text-2xl'> I&apos;m a full stack developer with, having experience 6 months in developing
+             and building real-time applications
+              for E-commerce, Entertainment platforms.</p>
 
-            </h2>
+
+     
+          </div>
+            
             </div>
            
         
@@ -206,9 +211,9 @@ function Home() {
     
     
     <div>
-        <div className='  h-56 bg-gray-900'>
+        <div className='  h-56 bg-[#E8FFF9]'>
             <div className=' max-w-6xl mx-auto'>
-            <h1>footer</h1>
+            <h1></h1>
             </div>
         
         </div>
