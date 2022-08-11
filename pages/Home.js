@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { Header } from 'next/dist/lib/load-custom-routes'
+
+
 
 
 function Home() {
@@ -14,39 +15,81 @@ function Home() {
       </Head>
       <div className=' '> 
 {/* Navbar start */}
-<header>
-<div className='fixed flex  w-full gap-5 justify-center items-center pb-10'>
-    <div className=' h-12 w-full bg-slate-400  items-center flex '>
+<div className='hidden md:block'>
+<div className=' fixed flex  w-full gap-5 justify-center items-center '>
+    <div className=' h-12 pt-2 w-full bg-[#E8FFF9]  items-center flex '>
     
         <div className='max-w-6xl mx-auto  flex justify-center gap-5 text-2xl'>
-            
-            <Link href="/Home/#section1"><h1>Home</h1></Link>
-            <Link href="/Home/#section2"><h1>About me</h1></Link>
-            <Link href="/Home/#section3"><h1>Project</h1></Link>
-            <Link href="/Home/#section4"><h1>Contact</h1></Link>
         
+            
+        <img src='/assets/image/me.jpg' className='h-10 w-10 rounded-full'></img>
+            <h1 className='font-DS pr-40'>Praveen V</h1>
+            
+            <Link href="/Home/#section1"><h1 className=' cursor-pointer'>Home</h1></Link>
+            <Link href="/Home/#section2"><h1 className=' cursor-pointer'>About me</h1></Link>
+            <Link href="/Home/#section3"><h1 className=' cursor-pointer'>Project</h1></Link>
+            <Link href="/Home/#section4"><h1 className=' cursor-pointer pr-32'>Contact</h1></Link>
+                <div className='flex gap-3 pl-20'>
+                    <a href='https://github.com/praveen-v10' target="_blank">
+                <img src='/assets/image/github.svg' className='h-10 w-10'></img>
+                </a>
+                <a href='https://www.linkedin.com/in/praveen-v-6b3b56194/' target="_blank">
+                <img src='/assets/icon/linkedin1.svg' className='h-10 w-10'></img>
+                </a>
+                </div>
+          
+           
             </div>
         </div>
     </div>
-    </header>
+    
     {/* Navbar end */}
-<main className=''>
-    <div className='max-w-6xl mx-auto'>
+<main className='bg-[#E8FFF9]'>
+    <div className='max-w-5xl mx-auto'>
 
     {/* Section 1 start */}
     <div id='section1'>
-        <div className='h-screen '>
-        <h1>section 1</h1>
+        <div className='h-screen'>
+            <div className='flex items-center h-[550px]'>
+            <div className='h-[600px] w-[600px] '>
+            <img src= '/assets/image/hello.svg'className='h-[600px] w-[600px] pt-20' />
+            </div>
+             <div className='h-[400px] w-[500px] pt-32 pl-10 text-center'>
+                <h1 className='text-4xl font-Piano' >Hello !!</h1>
+                <h2 className='text-3xl pt-5 font-Damion font-bold'>I'm  Praveen V</h2>
+                <h3 className='text-2xl pt-2 font-Piano '>Software developer</h3>
+                <div className='pt-16'>
+                <Link href="/Home/#section4">
+                 <button className=' border-2 border-black hover:bg-black h-8 w-24 rounded-lg font-medium hover:text-white'>Hire me</button>
+                </Link>
+                </div>
+            </div> 
+            </div>
+            <div className='justify-center flex animate-bounce '>
+            <img src='/assets/icon/iarrow.svg' className='h-10 w-10 rotate-90'></img> 
+            </div>
         </div>
-        
+       
     </div>
     {/* Section 1 end */}
 
 
     {/* Section 2 start */}
     <div id='section2'>
-        <div className='h-screen '>
-        <h1>section 2 </h1>
+        <div className='h-screen flex items-center gap-2'>
+            <div className=' space-y-3 text-2xl'>
+            <h1>
+            I'm a software developer with 6 months of internship experience in 
+            developing and building real-time applications for E-commerce, Entertainment platforms.  </h1>
+            <h2>
+            I get excited about opportunities where I get to challenge and solve problems using digital platforms.
+
+            </h2>
+            </div>
+           
+        
+        <img src='/assets/image/about3.svg' className='h-[500px] w-[500px]'></img>
+
         </div>
         
     </div>
@@ -54,8 +97,68 @@ function Home() {
 
     {/* Section 3 start */}
     <div id='section3'>
-        <div className='h-screen '>
-        <h1>section 3</h1>
+        <div className='h-screen flex items-center  '>
+            <div className='h-[550px] w-[500px]'>
+            <img src='/assets/image/project.svg' className='h-[500px] w-[500px] pt-16'></img>
+            </div>
+            <div className=' h-[600px] w-[650px] pt-20 '>
+                <h1 className='text-3xl font-semibold text-center'>Projects</h1>
+              
+                      <div className='pt-10 justify-center flex'>
+                    <div className='h-[190px] w-[550px] border-y-2 border-gray-400 flex items-center justify-center  shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover: duration-300  '>
+                         <div>
+                         <h1 className='text-2xl font-medium pl-5 font-Damion'>Disney+ Clone</h1>
+                         
+                         </div>
+                         <div className='flex pl-16'>
+                            <div>
+                            <h2 className='pb-5 pl-4 text-2xl'>App</h2>
+                            <a href='https://disney-six.vercel.app/' target="_blank" >
+                           <img src='https://filmdaily.co/wp-content/uploads/2021/01/disneyplusfree-02.jpg'className='h-20 w-20 rounded-lg'></img>
+                          </a>
+                            </div>    
+                           <div className='pl-10 '>
+                           <h2 className='pb-5 pr-5 text-2xl'>Source code</h2>
+                           <div className='pl-5'>
+                           <a href='https://github.com/praveen-v10/disney' target="_blank" >
+                           <img src='/assets/image/github.svg'className='h-20 w-20 rounded-lg'></img>
+                             </a>
+                           </div>                       
+                           </div>               
+                         </div>  
+                    </div>
+                 </div>
+
+                 <div className='pt-10 justify-center flex'>
+                    <div className='h-[190px] w-[550px] border-y-2 border-gray-400 flex items-center justify-center  shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover: duration-300  '>
+                         <div>
+                         <h1 className='text-2xl font-medium pl-5 font-Damion'>Twitter Clone</h1>
+                         
+                         </div>
+                         <div className='flex pl-16'>
+                            <div>
+                            <h2 className='pb-5 pl-4 text-2xl'>App</h2>
+                            <a href='https://twiter.vercel.app/' target="_blank" >
+                           <img src='/assets/image/twitter.svg'className='h-20 w-20 rounded-lg'></img>
+                          </a>
+                            </div>    
+                           <div className='pl-10 '>
+                           <h2 className='pb-5 pr-5 text-2xl'>Source code</h2>
+                           <div className='pl-5'>
+                           <a href='https://github.com/praveen-v10/twiter' target="_blank" >
+                           <img src='/assets/image/github.svg'className='h-20 w-20 rounded-lg'></img>
+                             </a>
+                           </div>                       
+                           </div>               
+                         </div>  
+                    </div>
+                 </div>
+             
+                
+
+            </div>
+
+        
         </div>
         
     </div>
@@ -63,8 +166,29 @@ function Home() {
 
     {/* Section 4 start */}
     <div id='section4'>
-        <div className='h-screen '>
-        <h1>section 4</h1>
+        <div className='h-screen pt-28 flex'>
+                <div className='h-[600px] w-[650px] space-y-5'>
+                <h1 className='text-3xl font-semibold text-center pt-7'>Contact</h1>
+                <div className='h-[300px] w-[600px] border-y-2 space-y-5 border-gray-400  '>
+                    <div className='flex  items-center gap-5 pt-16'>
+                        <img src='/assets/icon/mail2.svg' className='h-[80px] w-[80px]'></img>
+                        <h2 className='text-3xl font-Damion'>praveenjeff3@gmail.com</h2>
+                    </div>
+
+                    <div className='flex  items-center gap-5'>
+                        <img src='/assets/icon/linkedin.svg' className='h-[80px] w-[80px]'></img>
+                        <a href='https://www.linkedin.com/in/praveen-v-6b3b56194/'target="_blank">
+                        <h2 className='text-2xl font-Damion'>https://www.linkedin.com/in/praveen-v-6b3b56194/</h2>
+                        </a>
+                    </div>
+
+                </div>
+
+                </div>
+
+
+            <img src='/assets/image/contact3.svg' className='h-[400px] w-[500px]'></img>
+        
         </div>
        
     </div>
@@ -89,6 +213,13 @@ function Home() {
     </div>
     {/* Footer end */}
     </div>
+    </div>
+
+
+
+
+
+
     </>
   )
 }

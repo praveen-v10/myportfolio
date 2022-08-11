@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        Damion:["Damion"],
+        Piano:["Piano"],
+        Staisfy:["Satisfy"],
+        DS:["Dancing Script"]
+      } , 
+    },
   },
-  plugins: [],
+  plugins: [ require('flowbite/plugin')],
 }
