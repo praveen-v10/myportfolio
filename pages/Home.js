@@ -82,9 +82,7 @@ function Home() {
             <div className=''>
             <h1 className='text-3xl pb-16'>About</h1>
             <div className=' h-[200px] w-[600px] border-y-2 border-gray-400 shadow-lg'>
-            <p className='pt-8 text-2xl'> I&apos;m a full stack developer with, having experience 6 months in developing
-             and building real-time applications
-              for E-commerce, Entertainment platforms.</p>
+            <p className='pt-8 text-2xl'> I&apos;m a software developer, developing and building real-time applications for E-commerce, Entertainment platforms.</p>
 
 
      
